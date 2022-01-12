@@ -12,6 +12,7 @@ const AddMainTopic = () => {
       subTopics: [],
     };
 
+
     addMainTopic(newTopic);
     setTitle("");
   }
@@ -21,7 +22,7 @@ const AddMainTopic = () => {
       <input
         onChange={(e) => setTitle(e.target.value)}
         type="text"
-        placeholder="Название топика"
+        placeholder="Название   топика"
         value={title}
       />
       <button onClick={handleAddTopic}>Добавить</button>
