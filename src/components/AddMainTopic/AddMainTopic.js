@@ -11,6 +11,8 @@ const AddMainTopic = () => {
       topicTitle: title,
       subTopics: [],
     };
+
+
     addMainTopic(newTopic);
     setTitle("");
   }
