@@ -1,18 +1,19 @@
-import React, { useContext, useState } from 'react'
-import { documentationContext } from '../../context/DocumentationContext'
+import React, { useContext, useState } from "react";
+import { documentationContext } from "../../context/DocumentationContext";
 
 const AddMainTopic = () => {
-  const [title, setTitle] = useState('')
+  const [title, setTitle] = useState("");
 
-  const { addMainTopic } = useContext(documentationContext)
+  const { addMainTopic } = useContext(documentationContext);
 
   function handleAddTopic() {
     const newTopic = {
       topicTitle: title,
       subTopics: [],
-    }
-    addMainTopic(newTopic)
-    setTitle('')
+    };
+
+    addMainTopic(newTopic);
+    setTitle("");
   }
 
   return (
@@ -25,7 +26,7 @@ const AddMainTopic = () => {
       />
       <button onClick={handleAddTopic}>Добавить</button>
     </div>
-  )
-}
+  );
+};
 
-export default AddMainTopic
+export default AddMainTopic;
